@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORCA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ACERTE A PALAVRA</h1>
+    <p id="chance"></p>
+    <p id="triedWords"></p>
+
+    <input type="text" name="inputLetter" id="inputLetter" placeholder="letra" onchange="rigthLetter()">
+
+    <div id="words">
+        <div id="letters"></div>
+        <div id="spaces"></div>
+    </div>
+
+    <p id="currentRecord"></p>
+
+    <div id="end">
+        <h1 id="result"></h1>
+        <p id="word"></p>
+        <p id="record"></p>
+        <input id="reload" type="button" value="JOGAR NOVAMENTE" onclick="window.location.reload()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
