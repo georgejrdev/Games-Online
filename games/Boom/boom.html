@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter</title>
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/desktop.css" media="screen and (min-width:1026px) and (max-width:1500px)">
+</head>
+<body>
+    <header>
+        <h1 id="kills">ABATES: 0</h1>
+        <h1 id="bala">BALAS: 4</h1>
+    </header>
+
+    <main id="pagina">
+
+        <audio id="meuAudio">
+            <source src="AUDIO/som-disparo.mp3" type="audio/mpeg">
+        </audio>
+        <img src="IMG/Aim.png" id="aim">
+
+        <img onclick="matarZumbi('zumbi1')" src="IMG/Zumbi.png" class="zumbi" id="zumbi1">
+        <img onclick="matarZumbi('zumbi2')" src="IMG/Zumbi.png" class="zumbi" id="zumbi2">
+        <img onclick="matarZumbi('zumbi3')" src="IMG/Zumbi.png" class="zumbi" id="zumbi3">
+        <img onclick="matarZumbi('zumbi4')" src="IMG/Zumbi.png" class="zumbi" id="zumbi4">
+
+        <img src="IMG/disparo.gif" id="disparo">
+        <img src="IMG/Arma primeira pessoa.png" id="arma">
+    </main>
+
+    <div id="gameover">
+        <h1>VOCÊ PERDEU</h1>
+        <h2 id="abatesGameOver">VOCÊ MATOU 0 ZUMBIS</h2>
+        <h2 id="recorde"></h2>
+        <input type="button" value="Jogar Novamente" onclick="jogarNovamente()">
+    </div>
+
+    <div id="pause">
+        <h1>JOGO PAUSADO</h1>
+        <h2 id="abatesPause">ABATES: 0</h2>
+        <h2 id="balasPause">BALAS: 0</h2>
+        <input type="button" value="Voltar a Jogar" onclick="despausar()">
+    </div>
+
+    <input id="botao_pausar" type="button" value="" onclick="pausar()">
+    <input id="botao_mutar" type="button" value="" onclick="mutarAudio()">
+    <input id="botao_desmutar" type="button" value="" onclick="desmutarAudio()">
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

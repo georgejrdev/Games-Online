@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#disparo{
+    display: none;
+    width: 120px;
+    position: absolute;
+    top: 400px;
+    right: 340px;
+    transform: rotate(40deg);
+}

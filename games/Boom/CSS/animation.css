@@ -1,0 +1,35 @@
+@keyframes zumbi-animation1{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 800px;
+    }
+}
+
+@keyframes zumbi-animation2{
+    from{
+        top: 250px;
+    }
+    to{
+        top: 800px;
+    }
+}
+
+@keyframes zumbi-animation3{
+    from{
+        top: 400px;
+    }
+    to{
+        top: 800px;
+    }
+}
+
+@keyframes zumbi-animation4{
+    from{
+        top: 175px;
+    }
+    to{
+        top: 800px;
+    }
+}
